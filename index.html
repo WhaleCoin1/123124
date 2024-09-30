@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Cat Image</title>
+    <title>Random Image</title>
     <style>
         body {
             display: flex;
@@ -14,30 +14,13 @@
             background-color: #f0f0f0;
         }
         img {
-            max-width: 80%;
+            max-width: 100%;
             height: auto;
-            border: 5px solid #ccc;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <img id="catImage" src="" alt="Random Cat">
-    <script>
-        const catImage = document.getElementById('catImage');
-        const catApiUrl = 'https://api.thecatapi.com/v1/images/search';
-
-        async function fetchRandomCatImage() {
-            try {
-                const response = await fetch(catApiUrl);
-                const data = await response.json();
-                catImage.src = data[0].url;
-            } catch (error) {
-                console.error('Error fetching cat image:', error);
-            }
-        }
-
-        fetchRandomCatImage();
-    </script>
+    <img id="randomImage" src="" alt="Random Image">
+    <script src="script.js"></script>
 </body>
 </html>
