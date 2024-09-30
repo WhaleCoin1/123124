@@ -1,6 +1,9 @@
 const images = [
-    'images/image1.jpg',
-    'images/image2.jpg',
+    'images/1.jpg',
+    'images/2.jpg',
+    'images/3.jpg',
+    'images/4.jpg',
+    'images/5.jpg',
     // Thêm các đường dẫn ảnh vào đây
 ];
 
